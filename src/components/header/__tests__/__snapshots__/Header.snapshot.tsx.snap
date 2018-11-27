@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshots Simple Header with Text 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="header col-xs-12 col-sm-12 col-md-12 col-lg-12"
+    >
+      Heres a Header with some text
+    </div>
+  </div>
+</div>
+`;

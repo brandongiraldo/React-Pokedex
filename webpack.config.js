@@ -8,6 +8,10 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   devtool: 'source-map',
   resolve: {
@@ -23,7 +27,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: require('html-webpack-template'),
-      title: 'Spotify Mini',
+      title: 'Pokedex',
       bodyHtmlSnippet: '<div id="root"></div>',
     }),
   ],
@@ -37,6 +41,10 @@ module.exports = {
         enforce: 'pre',
         test: /\.js$/,
         loader: 'source-map-loader',
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

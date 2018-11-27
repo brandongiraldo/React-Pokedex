@@ -1,0 +1,23 @@
+.card-layout .card {
+  background-color: #fff;
+  box-shadow: 0px 1px 6px -2px #999;
+  border-radius: 6px;
+  border: 1px solid #fafafa;
+  min-height: 400px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card-layout .card p {
+  color: #666;
+}
+
+.card-layout .card img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-layout .col {
+  padding-right: 10px;
+  padding-left: 10px;
+}
