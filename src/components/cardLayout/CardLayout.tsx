@@ -28,7 +28,6 @@ export default class CardLayout extends React.Component<{}, CardLayoutState> {
                 name={item.name}
                 key={item.name}
                 url={item.url}
-                onClick={() => console.log('made it!')}
               />
             ))
           ) : (
